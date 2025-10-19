@@ -1,0 +1,6 @@
+PyQt5
+SQLAlchemy
+python-dotenv
+python-barcode
+Pillow
+reportlab

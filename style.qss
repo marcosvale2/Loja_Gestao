@@ -1,0 +1,84 @@
+/* ----------------- Fundo e textos ----------------- */
+QWidget {
+    background-color: #1e272e;
+    color: #f1f2f6;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+/* ----------------- Botões ----------------- */
+QPushButton {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #4e73df, stop:1 #1e90ff);
+    color: white;
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-weight: bold;
+    border: 1px solid #34495e;
+}
+QPushButton:hover {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #1e90ff, stop:1 #4e73df);
+}
+QPushButton:pressed {
+    background-color: #1c60b3;
+}
+
+/* ----------------- Campos de entrada ----------------- */
+QLineEdit, QSpinBox {
+    background-color: #2f3640;
+    color: #f1f2f6;
+    border: 1px solid #4e73df;
+    border-radius: 6px;
+    padding: 4px 6px;
+}
+QLineEdit:focus, QSpinBox:focus {
+    border: 2px solid #1abc9c;
+}
+
+/* ----------------- Tabela ----------------- */
+QTableWidget {
+    background-color: #2f3640;
+    color: #f1f2f6;
+    gridline-color: #4e73df;
+    border: none;
+    selection-background-color: #1abc9c;
+    selection-color: #ffffff;
+}
+QHeaderView::section {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #4e73df, stop:1 #1e90ff);
+    color: white;
+    padding: 6px;
+    border: none;
+    font-weight: bold;
+}
+
+/* ----------------- Labels ----------------- */
+QLabel {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* ----------------- Scrollbars ----------------- */
+QScrollBar:vertical {
+    background: #2f3640;
+    width: 12px;
+    margin: 0px 0px 0px 0px;
+    border-radius: 6px;
+}
+QScrollBar::handle:vertical {
+    background-color: #4e73df;
+    min-height: 20px;
+    border-radius: 6px;
+}
+QScrollBar::handle:vertical:hover {
+    background-color: #1abc9c;
+}
+QScrollBar::add-line, QScrollBar::sub-line {
+    height: 0px;
+}
+
+/* ----------------- Frames e caixas ----------------- */
+QFrame {
+    background-color: #2f3640;
+    border-radius: 6px;
+    border: 1px solid #4e73df;
+}

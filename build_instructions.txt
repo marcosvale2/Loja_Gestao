@@ -1,0 +1,49 @@
+BUILD INSTRUCTIONS (for Windows 11 x64)
+--------------------------------------
+1) Install Python 3.10+ (64-bit) and add to PATH.
+2) Open Powershell and navigate to project folder.
+3) (optional) Create a virtual env:
+   python -m venv venv
+   venv\Scripts\activate
+4) Install deps:
+   pip install -r requirements.txt
+5) Install pyinstaller:
+   pip install pyinstaller
+6) Build exe (this will create dist\gestaoLoja.exe):
+   pyinstaller --noconfirm --onefile --add-data "static;static" --name gestaoLoja app.py
+7) After build, copy the file dist\gestaoLoja.exe to wherever you like and test it.
+
+NOTES:
+- Build must run on Windows to produce Windows exe.
+- If you want a GUI-only app (no console), add --windowed (or --noconsole depending on PyInstaller version).
+- If antivirus flags the exe, try signing or building with different options (or disable UPX).
+
+
+INSTRUÇÕES DE COMPILAÇÃO (para Windows 11 x64)
+
+Instale o Python 3.10 ou superior (64 bits) e adicione-o ao PATH.
+
+Abra o PowerShell e navegue até a pasta do projeto.
+
+(Opcional) Crie um ambiente virtual:
+python -m venv venv
+venv\Scripts\activate
+
+Instale as dependências do projeto:
+pip install -r requirements.txt
+
+Instale o PyInstaller:
+pip install pyinstaller
+
+Gere o executável (isso criará o arquivo dist\gestaoLoja.exe):
+pyinstaller --noconfirm --onefile --add-data "static;static" --name gestaoLoja app.py
+
+Após a compilação, copie o arquivo dist\gestaoLoja.exe para onde desejar e teste o programa.
+
+Observações:
+
+A compilação deve ser feita no Windows para gerar um executável compatível.
+
+Se quiser um aplicativo apenas com interface gráfica (sem console), adicione o parâmetro --windowed (ou --noconsole, dependendo da versão do PyInstaller).
+
+Caso o antivírus identifique o executável como suspeito, tente assiná-lo digitalmente, recompilar com outras opções ou desativar o UPX durante a geração do arquivo.
